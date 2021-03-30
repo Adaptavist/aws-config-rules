@@ -49,6 +49,8 @@ Resources:
   CwLoggroupRetentionPeriodCheck:
     Properties:
       ConfigRuleName: cw-loggroup-retention-period-check
+      InputParameters:
+        MinRetentionTime: 15
       Source:
         Owner: AWS
         SourceIdentifier: CW_LOGGROUP_RETENTION_PERIOD_CHECK
